@@ -203,8 +203,9 @@ body {
           top: -4.7rem;
           color: #5e636b;
           background-color: #FFF; }
-          .results-body .table table thead td {
-            border-top: none; }
+          .results-body .table table thead i {
+            font-size: 2rem;
+            color: #5e636b; }
         .results-body .table table tbody {
           max-height: 100%;
           color: #000a19; }
