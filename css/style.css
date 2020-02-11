@@ -224,6 +224,8 @@ body {
             width: 2.5rem; }
           .results-body .table table tr .checkbox {
             width: 4rem; }
+            .results-body .table table tr .checkbox input {
+              margin-top: .5rem; }
           .results-body .table table tr .team-edit .link-disabled {
             text-decoration: none;
             color: rgba(0, 0, 0, 0.42);

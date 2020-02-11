@@ -379,6 +379,10 @@ body {
 
             & .checkbox {
                 width: 4rem;
+
+                & input {
+                  margin-top: .5rem;
+                }
             }
 
             // & .team-name {
