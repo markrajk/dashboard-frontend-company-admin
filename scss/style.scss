@@ -187,7 +187,10 @@ body {
       margin: 0;
       font-size: 1.5rem;
       font-weight: 600;
-      color: #6e747e;
+
+      & a {
+        color: #6e747e;
+      }
 
       & i {
         margin-top: 0;
@@ -408,7 +411,7 @@ body {
         & select {
             color: #5E636B;
             padding: 0;
-            width: 4.5rem;
+            width: 5rem;
             border: none;
         }
         

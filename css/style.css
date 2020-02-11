@@ -101,8 +101,9 @@ body {
     height: 2rem;
     margin: 0;
     font-size: 1.5rem;
-    font-weight: 600;
-    color: #6e747e; }
+    font-weight: 600; }
+    .results-header-logout a {
+      color: #6e747e; }
     .results-header-logout i {
       margin-top: 0;
       margin-left: -3px;
@@ -239,7 +240,7 @@ body {
         .results-body .table-footer select {
           color: #5E636B;
           padding: 0;
-          width: 4.5rem;
+          width: 5rem;
           border: none; }
         .results-body .table-footer i {
           color: #5E636B;
