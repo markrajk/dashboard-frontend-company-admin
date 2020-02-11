@@ -54,6 +54,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Open Sans", sans-serif;
+  background-color: #f8f9fb;
   // font-family: 'Lato', sans-serif;
   // font-family: 'Nunito', sans-serif;
 
@@ -336,7 +337,7 @@ body {
 
         & thead {
             position: absolute;
-            width: 100%;
+            width: calc(100% - 1.7rem - 3px);
             top: -4.7rem;
             
             color: #5e636b;
