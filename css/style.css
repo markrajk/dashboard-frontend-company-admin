@@ -203,7 +203,7 @@ body {
           outline: none; }
     .results-body .table-wrapper {
       position: relative;
-      height: calc(100% - 11.7rem - 6.9rem - .7rem - 4.7rem); }
+      height: auto; }
     .results-body .table {
       margin-top: 4.7rem;
       margin-bottom: 0;

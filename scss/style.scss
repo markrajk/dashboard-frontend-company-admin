@@ -336,8 +336,9 @@ body {
     // }
 
     & .table-wrapper {
-        position: relative;
-        height: calc(100% - 11.7rem - 6.9rem - .7rem - 4.7rem)
+      position: relative;
+      //height: calc(100% - 11.7rem - 6.9rem - .7rem - 4.7rem)
+      height: auto;
     }
 
     & .table {
