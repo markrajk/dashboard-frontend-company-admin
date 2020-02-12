@@ -175,13 +175,25 @@ body {
 }
 
 .results {
+  position: relative;
   font-family: "Lato", sans-serif;
   width: 100%;
   margin-left: 24.4rem;
-  background-color: #f8f9fb;
-  padding: 4.1rem 4.6rem 2.8rem 3.4rem;
+  //background-color: #f8f9fb;
+  padding: 0 4.6rem 2.8rem 3.4rem;
 
   &-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24.4rem);
+    height: 17rem;
+    margin-left: 24.4rem;
+    padding: 4.1rem 4.6rem 0 3.4rem;
+    background-color: #f8f9fb;
+    //border-bottom: 1px solid #dee2e6;
+    z-index: 500;
+
     &-logout {
       height: 2rem;
       margin: 0;
@@ -225,8 +237,10 @@ body {
     }
   }
   &-body {
+    margin-top: 16.9rem;
+    //padding: 0 4.6rem 2.8rem 3.4rem;
     font-family: "Lato", sans-serif;
-    width: 100%;
+    width: calc(100%);
     min-height: 58.7rem;
     height: 76vh;
     border: solid 1.5px #eaebee;
