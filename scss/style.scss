@@ -367,6 +367,10 @@ body {
             & td {
               border-top: none ;
               border-bottom: 1px solid #dee2e6 ;
+
+              &:first-child {
+                border-left: 1.5px solid #dee2e6;
+              }
             }
 
             & i {
