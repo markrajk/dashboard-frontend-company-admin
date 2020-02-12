@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="sidebar-group">
-                    <h3>ADMIN</h3>
+                    <h3 class="m0">ADMIN</h3>
                     <ul class="list-unstyled">
                         <li class="active"><a href="#">User/team register </a></li>
                         <li><a href="#">Company Profile </a></li>
@@ -122,13 +122,13 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td class="border-top-0 border-bottom filler-left"></td>
-                                    <td class="border-top-0 border-bottom checkbox"></td>
-                                    <td class="border-top-0 border-bottom team-name">Name of team</td>
-                                    <td class="border-top-0 border-bottom team-size d-none d-lg-table-cell"><a href="#"><i class="material-icons align-middle">arrow_downward</i></a> Team size</td>
-                                    <td class="border-top-0 border-bottom team-lead-name d-none d-xl-table-cell">Team lead</td>
-                                    <td class="border-top-0 border-bottom team-index">Team lead's email</td>
-                                    <td class="border-top-0 border-bottom team-lead-rating">Command</td>
+                                    <td class=" filler-left"></td>
+                                    <td class=" checkbox"></td>
+                                    <td class=" team-name">Name of team</td>
+                                    <td class=" team-size d-none d-lg-table-cell"><a href="#"><i class="material-icons align-middle">arrow_downward</i></a> Team size</td>
+                                    <td class=" team-lead-name d-none d-xl-table-cell">Team lead</td>
+                                    <td class=" team-index">Team lead's email</td>
+                                    <td class=" team-lead-rating">Command</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -326,9 +326,9 @@
        const onResize = () => {
             let bool = isOverflown(document.querySelector('.table').clientHeight, document.querySelector('.table').scrollHeight);
             if(bool) {
-                document.querySelector('thead').style.width = 'calc(100% - 1.7rem - 3px)';
+                document.querySelector('thead').style.width = 'calc(100% - 1.7rem)';
             } else {
-                document.querySelector('thead').style.width = 'calc(100%  - 3px)'
+                document.querySelector('thead').style.width = 'calc(100%)'
             }
        }
        onResize()
