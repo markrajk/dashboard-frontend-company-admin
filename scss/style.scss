@@ -240,15 +240,15 @@ body {
     }
   }
   &-body {
+    margin-top: 17rem;
     font-family: "Lato", sans-serif;
-    margin-top: 16.9rem;
-    //padding: 0 4.6rem 2.8rem 3.4rem;
-    font-family: "Lato", sans-serif;
-    width: calc(100%);
-    min-height: 58.7rem;
-    height: 76vh;
-    border: solid 1.5px #eaebee;
+    width: 100%;
+    //min-height: 58.7rem;
+    //max-height: 76vh;
+    height: auto;
+    border: solid 2px #eaebee;
     border-radius: 4px;
+    background-color: #FFF;
 
     & .h3 {
       margin-top: 2.7rem;
@@ -318,6 +318,14 @@ body {
           color: rgba(0, 0, 0, 0.75);
           border-radius: 1.7rem;
           border: solid 1.5px rgba(0, 0, 0, 0.1);
+
+          background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+          -moz-appearance: none; 
+          -webkit-appearance: none;
+
+          &:focus {
+            outline: none;
+          }
         }
       }
     }
@@ -484,4 +492,84 @@ body {
     }
     }
   }
+}
+
+
+.panel-body {
+  height: auto;
+ 
+}
+
+table {
+  // border-top: 1px solid black;    /* Just to Highlight Top of Table */
+  & i {
+    font-size:2rem;
+    color: #5e636b;
+  }
+}
+table thead tr {
+  height: 5rem;    /* Fixed Row Height */
+}
+
+/* Flex Table */
+table.flex-table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+table.flex-table thead,
+table.flex-table tbody {
+  display: block;
+}
+table.flex-table thead {
+  margin-right: 0px;
+}
+table.flex-table tbody {
+  flex: 1;
+  max-height: 52vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+
+  &::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+}
+table.flex-table tr {
+  width: 100%;
+  display: flex;
+}
+table.flex-table tr td,
+table.flex-table tr th {
+  display: flex;
+  flex: 1;
+  align-items:center;
+  justify-content:start;
+}
+
+table.flex-table tr th {
+  border: none!important;
+  border-bottom: 1px solid #dee2e6!important;
+  font-size: 1.4rem;
+  color: #5e636b;
+}
+
+.table-row {
+  margin-top: -4rem;
+}
+
+.spacer-left {
+  // display: block;
+  flex: .05!important;
+  width: 25px!important;
+}
+
+.spacer-right {
+  flex: .02!important;
+}
+
+.checkbox {
+  flex: .1!important;
+  width: 25px!important;
 }
